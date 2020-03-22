@@ -1,13 +1,12 @@
-import { Component } from '@angular/core';
-import { DIRECTION } from './enum';
+import { Component, OnInit } from '@angular/core';
+import { DIRECTION } from '../enum';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-widget',
+  templateUrl: './widget.component.html',
+  styleUrls: ['./widget.component.css']
 })
-export class AppComponent {
-  title = 'stack';
+export class WidgetComponent implements OnInit {
   currentFormIndex: number = 0;
 
   constructor() { }
